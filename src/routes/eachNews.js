@@ -10,7 +10,7 @@ eachnewsRouter.get('/:id', async(req, res) => {
         res.render('newsSingle', {article:newsApi.data})
     }catch (err){
         if(err.response){
-            res.render('newSingle', {article:null})
+            res.render('newsSingle', {article:null})
             console.log(err.response.data)
             console.log(err.response.status)
             console.log(err.response.headers)
